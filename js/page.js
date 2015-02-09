@@ -14,7 +14,7 @@ if (imgurl){
         encodeURIComponent(imgurl)
     );
 
-    $('#photo').append('<div id="pkcp" style="padding: 10px; background-color: gray;"><h3 style="color:white;">正在自動搜尋是否有非 pinkoi 網站也使用這張圖</h3></div>')
+    $('#photo').append('<div id="pkcp" style="padding: 10px; background-color: gray;"><h3 style="color:white;">正在自動搜尋是否有非 Pinkoi 網站也使用這張圖</h3></div>')
 
     // searchuri += "&q=site%3Ataobao.com&oq=site%3Ataobao.com";
     $.get(searchuri).done(function(resp){
@@ -34,7 +34,7 @@ if (imgurl){
 
         var html;
         if (result.length > 0){
-            html = '<div id="pkcp" style="padding: 10px; background-color: black;"><h3 style="color:#fd6072;">有非 pinkoi 網站也使用這張圖</h3><ul>%s</ul><br><br><div style="text-align: right; color: #aaa;">Powered by <a href="%s" target="_blank">Googe Image Search</a></div></div>';
+            html = '<div id="pkcp" style="padding: 10px; background-color: black;"><h3 style="color:#fd6072;">有非 Pinkoi 網站也使用這張圖</h3><ul>%s</ul><br><br><div style="text-align: right; color: #aaa;">Powered by <a href="%s" target="_blank">Googe Image Search</a></div></div>';
             var li_list = "";
             for (var i=0; i<result.length; i++){
                 var l = result[i];
