@@ -16,7 +16,8 @@ if (imgurl){
 
     $('#photo').append('<div id="pkcp" style="padding: 10px; background-color: gray;"><h3 style="color:white;">正在自動搜尋是否有非 Pinkoi 網站也使用這張圖</h3></div>')
 
-    // searchuri += "&q=site%3Ataobao.com&oq=site%3Ataobao.com";
+    var q = "orsite+taobao+com+-site%3Apinkoi.com";
+    searchuri += "&q=" + q + "&oq=" + q;
     $.get(searchuri).done(function(resp){
         var Q = $(resp);
 
